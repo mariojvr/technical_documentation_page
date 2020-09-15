@@ -14,37 +14,36 @@ main {
 
 #navbar {
     background-color: #ffffff;
-    grid-column-start: 1;
-    grid-column-end: 2;
     border-right: 3px solid #adaaaa;
     display: flex;
     flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2;
     height: 100%;
     position: fixed;
 }
 
 .nav-header {
-    padding: 0.5em;
     border-bottom: 2px solid #adaaaa;
     font-weight: bold;
+    padding: 0.5em;
 }
 
 .nav-link {
+    border-bottom: 1px solid #adaaaa;
+    color: #000000;
+    padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
-    border-bottom: 1px solid #adaaaa;
-    padding: 1em;
     text-align: center;
-    color: #000000;
 }
 
 .sections {
-    margin: 2em 0 2em 0;
-    padding: 0 0 0 25em;
     grid-column-start: 2;
     grid-column-end: 5;
+    margin: 2em 0 2em 0;
+    padding: 0 0 0 25em;
     width: 75vw;
-    
 }
 
 .sections header {
@@ -56,19 +55,17 @@ header {
 }
 
 code {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Share Tech Mono', monospace;
     margin: 1em;
     padding: 1em;
-    display: block;
-    border-radius: 5px;
     width: 100%;
-    background-color: #f7f7f7;
-    font-family: 'Share Tech Mono', monospace;
 }
 
 @media(min-width: 1200px){
     #navbar {
         width: 350px;
     }
-
-
 }

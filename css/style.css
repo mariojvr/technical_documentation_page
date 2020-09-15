@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
 main {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -36,12 +39,36 @@ main {
 }
 
 .sections {
-    padding: 3em 0 0 25em;
+    margin: 2em 0 2em 0;
+    padding: 0 0 0 25em;
     grid-column-start: 2;
     grid-column-end: 5;
     width: 75vw;
+    
+}
+
+.sections header {
+    margin: 1em 0 0.5em 0;
 }
 
 header {
     font-size: 2.5em;
+}
+
+code {
+    margin: 1em;
+    padding: 1em;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f7f7f7;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+@media(min-width: 1200px){
+    #navbar {
+        width: 350px;
+    }
+
+
 }
